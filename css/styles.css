@@ -304,24 +304,23 @@ header {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  fill: var(--primary-color);
+  color: var(--primary-color);
 }
 .clients-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--primary-color);
+  fill: currentColor;
 }
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
-.clients-link .clients-icon:hover,
-.clients-link .clients-icon:focus {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: currentColor;
 }
-
 .footer {
   background-color: var(--secondary-background-color);
   padding-bottom: 60px;
